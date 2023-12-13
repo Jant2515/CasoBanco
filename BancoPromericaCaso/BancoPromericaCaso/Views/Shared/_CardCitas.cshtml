@@ -1,0 +1,27 @@
+﻿@model BancoPromericaCaso.Models.citas
+
+<div class="card text-white" style="background-color: #3259C1; height: 100% !important">
+    <div class="card-body pb-0">
+        <div class="row">
+            <div class="col-8">
+                <p>Nombre del cliente:</p>
+                <h5>@Model.clientes.NombreCompleto</h5>
+                <p>Fecha de la cita:</p>
+                <h5>@Model.FechaHora</h5>
+            </div>
+            <div class="col-4">
+                <p>Ejecutivo corporativo:</p>
+                <h5>@Model.usuario.Nombres</h5>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="card-body pb-0">
+        <h6>@Model.Descripcion</h6>
+    </div>
+    <div class="card-body align-bottom m-3">
+        <a class="btn btn-primary" asp-controller="citas" asp-action="Edit" asp-route-id="@Model.IdCita">Editar</a>
+        <a class="btn btn-secondary" asp-controller="citas" asp-action="Details" asp-route-id="@Model.IdCita">Ver Detalles</a>
+        <a class="btn btn-danger" asp-controller="citas" asp-action="Delete" asp-route-id="@Model.IdCita">Eliminar</a>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<BancoPromericaCaso.Models.citas>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 col-sm-12">
+            @await Html.PartialAsync("_CardCitas",item)
+        </div>
+    }
+</div>
