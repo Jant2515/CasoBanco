@@ -4,10 +4,11 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Listado de citas</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <button type="button" class="btn btn-success"><a href="@Url.Action("Create")" class="text-white">Crear cita</a></button>
+
 </p>
 <div class="row">
     @foreach (var item in Model)

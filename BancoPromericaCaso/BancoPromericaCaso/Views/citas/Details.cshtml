@@ -4,39 +4,32 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<div class="container mt-5" >
+    <h1 class="mb-4">Details</h1>
 
-<div>
-    <h4>citas</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaHora)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FechaHora)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Descripcion)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Descripcion)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.usuario)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.usuario.Nombres)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.clientes)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.clientes.CorreoElectronico)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.IdCita">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <div class="card">
+        <div class="card-body" style="color: #28a745;">
+            <h4 class="card-title">Cita Details</h4>
+            <hr />
+
+            <dl class="row">
+                <dt class="col-sm-3">Fecha y Hora:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.FechaHora)</dd>
+
+                <dt class="col-sm-3">Descripción:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Descripcion)</dd>
+
+                <dt class="col-sm-3">Usuario:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.usuario.Nombres)</dd>
+
+                <dt class="col-sm-3">Correo Electrónico:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.clientes.CorreoElectronico)</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <a asp-action="Index" class="btn btn-primary">Salir</a>
+        <a asp-action="Edit" asp-route-id="@Model?.IdCita" class="btn btn-warning">Editar</a>
+    </div>
 </div>

@@ -2,40 +2,41 @@
 	ViewBag.Title = "Reporteria";
 }
 
-<div class="row mt-4">
+<div class="row mt-7">
     <div class="col-12">
-
-        <div class="card shadow-sm">
+        <div class="card shadow-sm mx-auto" style="max-width: 500px;">
             <div class="card-header">
-                <h5>Ejemplo descarga excel</h5>
+                <h5 class="mb-0">Descargar Excel</h5>
             </div>
             <div class="card-body">
-
-                <form action="@Url.Action("exportar","Home")" method="post">
-                    <div class="form-row align-items-end">
-                        <div class="col-sm-3">
-                            <label class="form-text">Empleado</label>
+                <form action="@Url.Action("exportar","Home")" method="post" class="mx-auto">
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3 text-center">
+                            <label class="form-text mb-0">Empleado</label>
                             <select class="form-control" name="usuario"></select>
                         </div>
-                        <div class="col-sm-3">
-                            <label class="form-text">Fecha Inicio</label>
+                        <div class="col-md-6 mb-3 text-center">
+                            <label class="form-text mb-0">Fecha Inicio</label>
                             <input type="text" class="form-control" name="fechainicio" autocomplete="off" />
                         </div>
-                        <div class="col-sm-3">
-                            <label class="form-text">Fecha Fin</label>
+                        <div class="col-md-6 mb-3 text-center">
+                            <label class="form-text mb-0">Fecha Fin</label>
                             <input type="text" class="form-control" name="fechafin" autocomplete="off" />
                         </div>
-                        <div class="col-sm-3">
+                        <br>
+                        <div class="col-md-6">
                             <button class="btn btn-success btn-block" type="submit">Descargar</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-
-
     </div>
 </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 @section scripts{
     <script>
@@ -53,21 +54,20 @@
                 changeYear: true
             }).datepicker('setDate', new Date());
 
-
-            $("select[Nombres=usuario]").append(
+            $("select[name=usuario]").append(
                 $("<option>").attr({ "value": "0" }).text("Todos")
-            )
+            );
 
-            $.get("@Url.Action("obtenerUsuario", "Home")", function (data) {
-
+            $.get("/Home/obtenerUsuario", function (data) {
                 $.each(data, function (i, fila) {
-                    $("select[Nombres=usuario]").append(
+                    $("select[name=usuario]").append(
                         $("<option>").attr({ "value": fila._IdUsuario }).text(fila._Nombres)
-                    )
-                })
+                    );
+                });
             });
 
-        })
+        });
     </script>
 }
+
     
