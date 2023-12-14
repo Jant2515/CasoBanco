@@ -1,42 +1,77 @@
-﻿@{
-	ViewBag.Title = "Reporteria";
+﻿@model BancoPromericaCaso.Models.citas
+@{
+    ViewBag.Title = "Reporteria";
 }
 
-<div class="row mt-7">
+<div class="row mt-4">
     <div class="col-12">
-        <div class="card shadow-sm mx-auto" style="max-width: 500px;">
+
+        <div class="card shadow-sm">
             <div class="card-header">
-                <h5 class="mb-0">Descargar Excel</h5>
+                <h5>Reporte de citas por ejecutivo</h5>
             </div>
             <div class="card-body">
-                <form action="@Url.Action("exportar","Home")" method="post" class="mx-auto">
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3 text-center">
-                            <label class="form-text mb-0">Empleado</label>
-                            <select class="form-control" name="usuario"></select>
+
+                <form action="@Url.Action("exportar","Home")" method="post">
+                    <div class="form-row align-items-end">
+                        <div class="col-sm-3">
+                            <label asp-for="IdUsuario" class="control-label">Ejecutivo</label>
+                            <select asp-for="IdUsuario" name="ejecutivo" class="form-control" asp-items="ViewBag.DropUsuarios"></select>
                         </div>
-                        <div class="col-md-6 mb-3 text-center">
-                            <label class="form-text mb-0">Fecha Inicio</label>
+                        <div class="col-sm-3">
+                            <label class="form-text">Fecha Inicio</label>
                             <input type="text" class="form-control" name="fechainicio" autocomplete="off" />
                         </div>
-                        <div class="col-md-6 mb-3 text-center">
-                            <label class="form-text mb-0">Fecha Fin</label>
+                        <div class="col-sm-3">
+                            <label class="form-text">Fecha Fin</label>
                             <input type="text" class="form-control" name="fechafin" autocomplete="off" />
                         </div>
-                        <br>
-                        <div class="col-md-6">
+                        <div class="col-sm-3">
                             <button class="btn btn-success btn-block" type="submit">Descargar</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
+
+
     </div>
 </div>
 
+<div class="row mt-4">
+    <div class="col-12">
+
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h5>Reporte de citas de un cliente</h5>
+            </div>
+            <div class="card-body">
+
+                <form action="@Url.Action("exportar2","Home")" method="post">
+                    <div class="form-row align-items-end">
+                        <div class="col-sm-3">
+                            <label asp-for="IdCliente" class="control-label">Cliente</label>
+                            <select asp-for="IdCliente" name="cliente" class="form-control" asp-items="ViewBag.DropClientes"></select>
+                        </div>
+                        <div class="col-sm-3">
+                            <label class="form-text">Fecha Inicio</label>
+                            <input type="text" class="form-control" name="fechainicio2" autocomplete="off" />
+                        </div>
+                        <div class="col-sm-3">
+                            <label class="form-text">Fecha Fin</label>
+                            <input type="text" class="form-control" name="fechafin2" autocomplete="off" />
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn btn-success btn-block" type="submit">Descargar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
 
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    </div>
+</div>
 
 @section scripts{
     <script>
@@ -54,19 +89,27 @@
                 changeYear: true
             }).datepicker('setDate', new Date());
 
-            $("select[name=usuario]").append(
+            $("select[name=ejecutivo]").append(
                 $("<option>").attr({ "value": "0" }).text("Todos")
-            );
+            )
 
-            $.get("/Home/obtenerUsuario", function (data) {
-                $.each(data, function (i, fila) {
-                    $("select[name=usuario]").append(
-                        $("<option>").attr({ "value": fila._IdUsuario }).text(fila._Nombres)
-                    );
-                });
-            });
+            $("input[name=fechainicio2]").datepicker({
+                dateFormat: "dd/mm/yy",
+                changeMonth: true,
+                changeYear: true
+            }).datepicker('setDate', new Date());
 
-        });
+            $("input[name=fechafin2]").datepicker({
+                dateFormat: "dd/mm/yy",
+                changeMonth: true,
+                changeYear: true
+            }).datepicker('setDate', new Date());
+
+            $("select[name=cliente]").append(
+                $("<option>").attr({ "value": "0" }).text("Todos")
+            )
+
+        })
     </script>
 }
 

@@ -61,53 +61,6 @@ namespace BancoPromericaCaso.Controllers
             return View(cita);
         }
 
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null || _context.citas == null)
-            {
-                return NotFound();
-            }
-
-            var cita = await _context.citas.FindAsync(id);
-            if (cita == null)
-            {
-                return NotFound();
-            }
-            return View(cita);
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdCita,FechaHora,Descripcion,IdUsuario,IdCliente")] citas cita)
-        {
-            if (id != cita.IdCita)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(cita);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!CitaExists(cita.IdCita))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(cita);
-        }
-
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.citas == null)

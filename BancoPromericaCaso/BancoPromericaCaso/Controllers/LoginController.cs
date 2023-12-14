@@ -29,21 +29,11 @@ namespace BancoPromericaCaso.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var usuario = await _context.usuario.SingleOrDefaultAsync(x => x.Correo == login.Correo && x.Contrasena == login.Contraseña);
+                    var usuario = await _context.usuario.SingleOrDefaultAsync(x => x.Correo == login.Correo && x.Contrasena == login.Contrasena);
 
                     if (usuario != null)
                     {
-                        HttpContext.Session.SetString("Correo", usuario.Correo);
-                        HttpContext.Session.SetString("Usuario", JsonConvert.SerializeObject(usuario));
-
-                        if (usuario.EsAdministrador)
-                        {
-                            return RedirectToAction("Index", "Home");
-                        }
-                        else
-                        {
-                            return RedirectToAction("Index", "Home");
-                        }
+                        return RedirectToAction("Index", "Home");
                     }
                 }
 
@@ -56,5 +46,21 @@ namespace BancoPromericaCaso.Controllers
                 return View("Index", login);
             }
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register([Bind("IdUsuario,Nombres,Apellidos,Correo,Contrasena")] usuario usuarios)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(usuarios);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(usuarios);
+        }
+
     }
 }

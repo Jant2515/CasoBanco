@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\seba2\\OneDrive\\Documentos\\Cuatrimestres\\CasoBanco\\BancoPromericaCaso\\BancoPromericaCaso\\BancoPromericaCaso.csproj": {}
+    "C:\\Users\\josea\\Documents\\GitHub\\CasoBanco\\BancoPromericaCaso\\BancoPromericaCaso\\BancoPromericaCaso.csproj": {}
   },
   "projects": {
-    "C:\\Users\\seba2\\OneDrive\\Documentos\\Cuatrimestres\\CasoBanco\\BancoPromericaCaso\\BancoPromericaCaso\\BancoPromericaCaso.csproj": {
+    "C:\\Users\\josea\\Documents\\GitHub\\CasoBanco\\BancoPromericaCaso\\BancoPromericaCaso\\BancoPromericaCaso.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seba2\\OneDrive\\Documentos\\Cuatrimestres\\CasoBanco\\BancoPromericaCaso\\BancoPromericaCaso\\BancoPromericaCaso.csproj",
+        "projectUniqueName": "C:\\Users\\josea\\Documents\\GitHub\\CasoBanco\\BancoPromericaCaso\\BancoPromericaCaso\\BancoPromericaCaso.csproj",
         "projectName": "BancoPromericaCaso",
-        "projectPath": "C:\\Users\\seba2\\OneDrive\\Documentos\\Cuatrimestres\\CasoBanco\\BancoPromericaCaso\\BancoPromericaCaso\\BancoPromericaCaso.csproj",
-        "packagesPath": "C:\\Users\\seba2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seba2\\OneDrive\\Documentos\\Cuatrimestres\\CasoBanco\\BancoPromericaCaso\\BancoPromericaCaso\\obj\\",
+        "projectPath": "C:\\Users\\josea\\Documents\\GitHub\\CasoBanco\\BancoPromericaCaso\\BancoPromericaCaso\\BancoPromericaCaso.csproj",
+        "packagesPath": "C:\\Users\\josea\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\josea\\Documents\\GitHub\\CasoBanco\\BancoPromericaCaso\\BancoPromericaCaso\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\seba2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\josea\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

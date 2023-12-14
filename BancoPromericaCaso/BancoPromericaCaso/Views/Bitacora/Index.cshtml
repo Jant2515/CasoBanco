@@ -1,0 +1,53 @@
+﻿@model IEnumerable<BancoPromericaCaso.Models.clientes>
+
+@{
+    ViewData["Title"] = "Bitacora";
+}
+
+<h1>Bitácoras de los clientes</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success" class="text-white">Nuevo cliente</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreCompleto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CorreoElectronico)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Empresa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreCompleto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CorreoElectronico)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Empresa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefono)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdCliente">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdCliente">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdCliente">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

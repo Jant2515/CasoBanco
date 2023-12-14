@@ -7,6 +7,6 @@ namespace BancoPromericaCaso.Models
         [Required(ErrorMessage = "Favor ingrese un Correo")]
         public string Correo { get; set; }
         [Required(ErrorMessage = "Favor ingrese una Contraseña")]
-        public string Contraseña { get; set; }
+        public string Contrasena { get; set; }
     }
 }

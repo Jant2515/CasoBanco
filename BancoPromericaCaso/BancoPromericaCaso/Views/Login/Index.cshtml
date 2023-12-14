@@ -273,16 +273,18 @@
     <div class="container">
         <div class="screen">
             <div class="screen__content">
-                <form class="login">
+                <form asp-action="Login" class="login">
                     <h2 style="color:#28a745">Iniciar Sesion</h2>
                     <div class="login__field">
   
                         <i class="login__icon fas fa-user"></i>
-                        <input type="text" id="correo" class="correo  form-control form-control-lg" placeholder="Correo Electrónico">
+                        <input asp-for="Correo" type="text" id="correo" class="correo  form-control form-control-lg" placeholder="Correo Electrónico">
+                        <span asp-validation-for="Correo" class="text-danger"></span>
                     </div>
                     <div class="login__field">
                         <i class="login__icon fas fa-lock"></i>
-                        <input type="password" id="contrasena" class="contrasenna form-control form-control-lg" placeholder="Contraseña">
+                        <input asp-for="Contrasena" type="password" id="contrasena" class="contrasenna form-control form-control-lg" placeholder="Contrasena">
+                        <span asp-validation-for="Contrasena" class="text-danger"></span>
                     </div>
                     <button class="button login__submit">
                         <span class="button__text">Iniciar Sesión</span>
@@ -290,7 +292,8 @@
                     </button>
                 </form>
                 <div class="social-login" >
-                    <button class="button register__submit"><span class="button__text">Registrar</span></button>
+                    @Html.ActionLink("Registrar", "Register", "Login", null, new { @class = "button register__submit" })
+
                     <div class="social-icons">
                         <a href="https://instagram.com/isikabatay06" class="social-login__icon fab fa-instagram"></a>
                         <a href="#" class="social-login__icon fab fa-facebook"></a>

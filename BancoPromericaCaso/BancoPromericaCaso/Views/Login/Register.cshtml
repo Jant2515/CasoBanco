@@ -1,4 +1,4 @@
-﻿@model Login
+﻿@model BancoPromericaCaso.Models.usuario
 @{
     Layout = null;
 }
@@ -293,28 +293,24 @@
     <div class="container">
         <div class="screen">
             <div class="screen__content">
-                <form class="login">
+                <form asp-action="Register" class="login">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <h2 style="color:#28a745">Registrar</h2>
                     <div class="login__field">
-  
                         <i class="login__icon fas fa-user"></i>
-                        <input type="text" id="correo" class="correo  form-control form-control-lg" placeholder="Correo Electrónico">
+                        <input asp-for="Correo" type="text" id="Correo" class="correo  form-control form-control-lg" placeholder="Correo Electrónico">
                     </div>
                     <div class="login__field">
                         <i class="login__icon fas fa-lock"></i>
-                        <input type="password" id="contrasena" class="contrasenna form-control form-control-lg" placeholder="Nombre">
+                        <input asp-for="Nombres" type="text" id="Nombres" class="Nombres form-control form-control-lg" placeholder="Nombre">
                     </div>   
                     <div class="login__field">
                         <i class="login__icon fas fa-lock"></i>
-                        <input type="password" id="contrasena" class="contrasenna form-control form-control-lg" placeholder="Apellido">
+                        <input asp-for="Apellidos" type="text" id="Apellidos" class="Apellidos form-control form-control-lg" placeholder="Apellido">
                     </div>  
                     <div class="login__field">
                         <i class="login__icon fas fa-lock"></i>
-                        <input type="password" id="contrasena" class="contrasenna form-control form-control-lg" placeholder="Confirmar Contraseña">
-                    </div> 
-                    <div class="login__field">
-                        <i class="login__icon fas fa-lock"></i>
-                        <input type="password" id="contrasena" class="contrasenna form-control form-control-lg" placeholder="Confirmar Contraseña">
+                        <input asp-for="Contrasena" type="password" id="Contrasena" class="Contrasenna form-control form-control-lg" placeholder="Contraseña">
                     </div>
                     <button class="button login__submit">
                         <span class="button__text">Registrarse</span>
@@ -322,10 +318,7 @@
                     </button>
                 </form>
                 <div class="social-login" >
-                    <button class="button volver__submit">
-                        <span class="button__text">volver</span>
-
-                    </button>
+                        @Html.ActionLink("Volver", "Index", "Login", null, new { @class = "button volver__submit" })
                 </div>
             </div>
             <div class="screen__background">

@@ -1,35 +1,17 @@
 ﻿@model BancoPromericaCaso.Models.citas
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Eliminar";
 }
+<h1>Eliminar</h1>
+
+<h3>Estás seguro de eliminarlo?</h3>
 
 <div class="container mt-5">
 
-    <div class="card mt-4">
-        <div class="card-body" style="color: #28a745;">
-            <h4 class="card-title">Cita Details</h4>
-            <hr />
-
-            <dl class="row">
-                <dt class="col-sm-3">Fecha y Hora:</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.FechaHora)</dd>
-
-                <dt class="col-sm-3">Descripción:</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.Descripcion)</dd>
-
-                <dt class="col-sm-3">Usuario:</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.usuario.Nombres)</dd>
-
-                <dt class="col-sm-3">Correo Electrónico:</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.clientes.CorreoElectronico)</dd>
-            </dl>
-        </div>
-    </div>
-
-    <form asp-action="Delete" class="mt-4" onsubmit="return confirm('Are you sure you want to delete this item?');">
+    <form asp-action="Delete" class="mt-4" onsubmit="return confirm('Está seguro de eliminarlo?');">
         <input type="hidden" asp-for="IdCita" />
         <button type="submit" class="btn btn-danger">Eliminar</button>
-        <a asp-action="Index" class="btn btn-primary">Salir</a>
+        <a asp-action="Index" class="btn btn-primary">Volver</a>
     </form>
 </div>

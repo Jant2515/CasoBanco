@@ -9,79 +9,93 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BancoPromericaCaso
 build_property.RootNamespace = BancoPromericaCaso
-build_property.ProjectDir = C:\Users\seba2\OneDrive\Documentos\Cuatrimestres\CasoBanco\BancoPromericaCaso\BancoPromericaCaso\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\josea\Documents\GitHub\CasoBanco\BancoPromericaCaso\BancoPromericaCaso\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\seba2\OneDrive\Documentos\Cuatrimestres\CasoBanco\BancoPromericaCaso\BancoPromericaCaso
+build_property.MSBuildProjectDirectory = C:\Users\josea\Documents\GitHub\CasoBanco\BancoPromericaCaso\BancoPromericaCaso
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/citas/Create.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Bitacora/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQml0YWNvcmFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Bitacora/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQml0YWNvcmFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Bitacora/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQml0YWNvcmFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Bitacora/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQml0YWNvcmFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Bitacora/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQml0YWNvcmFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/citas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2l0YXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/citas/Delete.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/citas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2l0YXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/citas/Details.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/citas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2l0YXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/citas/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2l0YXNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/citas/Index.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/citas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2l0YXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Home/Index.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Home/Privacy.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Home/Reportes.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Home/Reportes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXBvcnRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Login/Index.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Login/Register.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Login/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Shared/Error.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Shared/_CardCitas.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Shared/_CardCitas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJkQ2l0YXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/usuario/Index.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/_ViewImports.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/_ViewStart.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/seba2/OneDrive/Documentos/Cuatrimestres/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Shared/_Layout.cshtml]
+[C:/Users/josea/Documents/GitHub/CasoBanco/BancoPromericaCaso/BancoPromericaCaso/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-khpdwk85zo

@@ -19,7 +19,7 @@ namespace BancoPromericaCaso.Models
         [StringLength(100)]
         public string Contrasena { get; set; }
 
-        public bool EsAdministrador { get; set; }
+        public bool EsAdministrador { get; set; } = false;
 
         public bool Activo { get; set; } = true;
 
