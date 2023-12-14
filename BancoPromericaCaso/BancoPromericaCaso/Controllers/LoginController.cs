@@ -13,7 +13,10 @@ namespace BancoPromericaCaso.Controllers
         {
             _context = context;
         }
-
+         public IActionResult Register()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();
